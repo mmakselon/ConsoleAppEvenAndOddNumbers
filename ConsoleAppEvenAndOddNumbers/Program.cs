@@ -14,7 +14,7 @@ namespace ConsoleAppEvenAndOddNumbers
 
             while (true)
             {
-                var number = GetNumber(Console.ReadLine());
+                var number = GetNumber();
                 CheckNumber(number);
 
                 Console.WriteLine("Jeżeli chcesz podaj kolejną liczbę. Jeśli chcesz zakończyć kliknij 'q'.");
@@ -26,12 +26,11 @@ namespace ConsoleAppEvenAndOddNumbers
         }
 
 
-        static int GetNumber(string number)
+        static int GetNumber()
         {
-
-
             while (true)
             {
+                var number = Console.ReadLine();
                 if (number.ToLower() == "q")
                     Environment.Exit(0);
 
