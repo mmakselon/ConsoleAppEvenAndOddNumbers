@@ -16,6 +16,7 @@ namespace ConsoleAppEvenAndOddNumbers
             {
                 var number = GetNumber();
                 CheckNumber(number);
+                Console.WriteLine();
 
                 Console.WriteLine("Jeżeli chcesz podaj kolejną liczbę. Jeśli chcesz zakończyć kliknij 'q'.");
 
@@ -36,7 +37,7 @@ namespace ConsoleAppEvenAndOddNumbers
 
                 if (!int.TryParse(number, out int result))
                 {
-                    Console.WriteLine("Podałeś nieprawidłową wartość!");
+                    Console.WriteLine("Podałeś nieprawidłową wartość! Wpisz liczbę:");
                     continue;
                 }
                 else
